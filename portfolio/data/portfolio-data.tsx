@@ -177,7 +177,7 @@ export const projects = {
             name: 'NecroNibbler',
             id: 'necronibbler',
             date: 'Oct 2024 - Nov 2024',
-            shortDescription: 'Necro Nibbler is a Java-based top-down shooter that features zombies, resource management and varied weapons. Do you have what it takes to take all the zombies down and escape?',
+            shortDescription: 'Necro Nibbler is a Java-based top-down shooter that features zombies, resource management and a variety of weapons. Do you have what it takes to take all the zombies down and escape?',
             longDescription:
                 <>
                     <h3 className='mb-4'>About</h3>
