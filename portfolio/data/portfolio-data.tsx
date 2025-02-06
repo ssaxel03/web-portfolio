@@ -12,7 +12,7 @@ export const details = {
 }
 
 export const about = {
-    message: <p className='text-xl text-justify'>I'm a <span className='text-orange-600 font-bold'><strong>software developer</strong></span> focused on building web applications that <span className='text-orange-600 font-bold'><strong>solve real problems</strong></span>. I enjoy building tools that are simple, reliable and effective. My goal is to create software that truly <span className='text-orange-600 font-bold'><strong>helps people</strong></span>.</p>,
+    message: <p className='text-xl text-justify'>I'm a <span className='text-orange-600 font-bold'><strong>software developer</strong></span> focused on building web applications that <span className='text-orange-600 font-bold'><strong>solve real problems</strong></span>. When I'm not solving problems I enjoy weightlifting, martial arts and archery.</p>,
 }
 
 export const socials = {
