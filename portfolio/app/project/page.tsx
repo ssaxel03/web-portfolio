@@ -1,21 +1,23 @@
-import { redirect } from 'next/navigation'
+"use client";
+import { redirect } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import { projects } from '@/data/portfolio-data';
 
 import { LuArrowLeft } from "react-icons/lu";
 import Link from 'next/link';
 
-export default function NewsPage({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined }
-}) {
-  const selectedProject = projects.list.filter((project) => project.id === searchParams.id?.toString())[0];
+function Page() {
+  const searchParams = useSearchParams()
+
+  const selectedProject = projects.list.filter((project) => project.id === searchParams.get('id'))[0];
 
   if (!selectedProject) {
     redirect('/');
   }
 
   return (
+
     <main className="flex flex-col w-full justify-center items-start sm:w-4/6 px-2 py-2 lg:px-0 lg:py-12 text-xl">
 
       <article className='w-full'>
@@ -83,5 +85,15 @@ export default function NewsPage({
       </article>
 
     </main>
+  )
+
+}
+
+export default function ProjectsPage() {
+
+  return (
+    <Suspense>
+      <Page />
+    </Suspense>
   );
 }
