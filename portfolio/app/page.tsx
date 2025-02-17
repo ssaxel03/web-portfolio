@@ -25,7 +25,7 @@ export default function Page() {
 
             <section className='w-full mb-16'>
 
-                <h1 className='text-xl font-bold mb-4'>Projects</h1>
+                <h2 className='text-xl font-bold mb-4'>Projects</h2>
 
                 <Projects />
 
@@ -36,7 +36,7 @@ export default function Page() {
 
             <section className='w-full mb-16'>
 
-                <h1 className="text-xl font-bold mb-4">Skills</h1>
+                <h2 className="text-xl font-bold mb-4">Skills</h2>
 
                 <Skills />
 
@@ -47,7 +47,7 @@ export default function Page() {
 
             <section className='w-full'>
 
-                <h1 className="text-xl font-bold mb-4">Journey</h1>
+                <h2 className="text-xl font-bold mb-4">Journey</h2>
 
                 <Journey/>
 

@@ -5,9 +5,9 @@ export default function Details() {
     return (
         <section className='flex flex-col w-full lg:w-1/2'>
 
-            <h1 className='text-xl font-bold mb-4'>Who am I?</h1>
+            <h2 className='text-xl font-bold mb-4'>Who am I?</h2>
 
-            <article className="text-xl mb-1">{details.name}</article>
+            <h1 className="text-xl mb-1">{details.name}</h1>
 
             <article className="text-xl mb-1">{details.role}</article>
 
