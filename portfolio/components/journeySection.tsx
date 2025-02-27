@@ -1,38 +1,51 @@
-import { journey } from "@/data/portfolio-data"
+"use client";
+import { journey } from "@/data/portfolio-data";
+import { motion } from "framer-motion";
 
 export default function Journey() {
     return (
-        <section className="flex flex-col gap-2 mb-16">
-            {journey.list.map((experience, index) => (
-                <div key={index} id="journey-grid" className="gap-4 mb-4">
-                    <div className="mt-[8px] relative bg-orange-600 rounded-md">
-                        <div className='absolute top-0 left-[50%] w-[12px] h-[12px] -translate-x-[50%] rounded-full bg-orange-600 w-'>
-                        </div>
-                    </div>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}>
+            <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }} className="text-xl font-bold mb-4">Journey</motion.h2>
+
+            <section className="flex flex-col gap-2 mb-16">
+                {journey.list.map((experience, index) => (
+                    <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5 }}
+                        key={index}
+                        id="journey-grid"
+                        className="gap-4 mb-4">
+                        <motion.div style={{ transformOrigin: 'top' }} initial={{ scaleY: 0 }} whileInView={{ scaleY: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 2 }}
+                            className="mt-[8px] relative bg-orange-600 rounded-md">
+                            <div className='absolute top-0 left-[50%] w-[12px] h-[12px] -translate-x-[50%] rounded-full bg-orange-600 w-'>
+                            </div>
+                        </motion.div>
 
 
-                    <article className="flex flex-col">
-                        <h2 className="text-xl mb-1">{experience.role} @ {experience.company}</h2>
-                        <p className="text-xl text-neutral-500 mb-1">{experience.date}</p>
-                        {experience.description}
+                        <article className="flex flex-col">
+                            <motion.h3 initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }} className="text-xl mb-1">{experience.role} @ {experience.company}</motion.h3>
+                            <motion.p initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }} className="text-xl text-neutral-500 mb-1">{experience.date}</motion.p>
+                            <motion.div initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}>
+                                {experience.description}
+                            </motion.div>
 
-                        <section className="flex flex-row flex-wrap gap-2 w-full">
-                            {experience.technologies.map((tech, techIndex) => (
-                                <span
-                                    key={techIndex}
-                                    className="bg-neutral-800 text-xl text-neutral-50 flex justify-center items-center rounded-md px-2 h-10 aspect-video"
-                                    role="img"
-                                    aria-label={tech.ariaLabel}
-                                >
-                                    {tech.icon}
-                                    <span className="sr-only">{tech.ariaLabel}</span>
-                                </span>
-                            ))}
-                        </section>
-                        
-                    </article>
-                </div>
-            ))}
-        </section>
+
+                            <section className="flex flex-row flex-wrap gap-2 w-full">
+                                {experience.technologies.map((tech, techIndex) => (
+                                    <motion.span initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.2, delay: techIndex * 0.25 }}
+                                        key={techIndex}
+                                        className="bg-neutral-800 text-xl text-neutral-50 flex justify-center items-center rounded-md px-2 h-10 aspect-video"
+                                        role="img"
+                                        aria-label={tech.ariaLabel}
+                                    >
+                                        {tech.icon}
+                                        <span className="sr-only">{tech.ariaLabel}</span>
+                                    </motion.span>
+                                ))}
+                            </section>
+
+                        </article>
+                    </motion.div>
+                ))}
+            </section>
+        </motion.div>
     )
 }
