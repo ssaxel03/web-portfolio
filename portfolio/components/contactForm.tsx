@@ -42,17 +42,17 @@ export default function Contact() {
       id="contact"
       onSubmit={handleSubmitUI}>
 
-      <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }} className="text-xl font-bold mb-4">Contact me</motion.h2>
+      <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl font-bold mb-4">Contact me</motion.h2>
 
       <div className='flex flex-col lg:flex-row justify-center items-center lg:gap-x-9 mb-1'>
 
-        <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+        <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
           className='flex flex-col flex-wrap w-full lg:w-3/6'>
           <label className='text-xl text-neutral-50 mb-1' htmlFor="name">Name</label>
           <input className='text-xl bg-neutral-800 text-neutral-50 h-12 rounded-md px-2 px-2 py-2 focus:outline-none border-2 border-transparent focus:border-orange-600' type="text" name="name" id="name" required />
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+        <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
           className='flex flex-col flex-wrap w-full lg:w-3/6'>
           <label className='text-xl text-neutral-50 mb-1' htmlFor="email">Email</label>
           <input className='text-xl bg-neutral-800 text-neutral-50 h-12 rounded-md px-2 px-2 py-2 focus:outline-none border-2 border-transparent focus:border-orange-600' type="email" name="email" id="email" required />
@@ -60,19 +60,19 @@ export default function Contact() {
 
       </div>
 
-      <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+      <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
         className='flex flex-col flex-wrap w-full mb-1'>
         <label className='text-xl text-neutral-50 mb-1' htmlFor="subject">Subject</label>
         <input className='text-xl bg-neutral-800 text-neutral-50 h-12 rounded-md px-2 py-2 focus:outline-none border-2 border-transparent focus:border-orange-600' type="text" name="subject" id="subject" required />
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+      <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
         className='flex flex-col flex-wrap w-full mb-4'>
         <label className='text-xl text-neutral-50 mb-1' htmlFor="message">Message</label>
         <textarea className='bg-neutral-800 text-xl text-neutral-50 rounded-md px-2 py-2 resizable-vertical min-h-64 focus:outline-none border-2 border-transparent focus:border-orange-600' name="message" id="message" required></textarea>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}>
+      <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}>
         <button
           disabled={sending || buttonText !== "Send"}
           className="w-2/6 lg:w-1/6 text-xl bg-neutral-800 focus:bg-orange-600 focus:scale-105 hover:bg-orange-600 hover:scale-105 duration-300 ease-in-out rounded-md focus:outline-none flex gap-2 justify-center items-center h-10 px-2 py-2"

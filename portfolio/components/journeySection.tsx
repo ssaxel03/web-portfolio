@@ -5,17 +5,17 @@ import { motion } from "framer-motion";
 export default function Journey() {
     return (
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}>
-            <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }} className="text-xl font-bold mb-4">Journey</motion.h2>
+            <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl font-bold mb-4">Journey</motion.h2>
 
             <section className="flex flex-col gap-2 mb-16">
                 {journey.list.map((experience, index) => (
-                    <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5 }}
+                    <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.5 }}
                         key={index}
                         id="journey-grid"
                         className="gap-4 mb-4">
-                        <motion.div style={{ transformOrigin: 'top' }} initial={{ scaleY: 0 }} whileInView={{ scaleY: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 2 }}
+                        <motion.div style={{ transformOrigin: 'top' }} initial={{ opacity: 0, height: 0 }} whileInView={{ opacity: 1, height: "100%" }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 1 }}
                             className="mt-[8px] relative bg-orange-600 rounded-md">
-                            <div className='absolute top-0 left-[50%] w-[12px] h-[12px] -translate-x-[50%] rounded-full bg-orange-600 w-'>
+                            <div className='absolute top-0 left-[50%] w-[12px] h-[12px] -translate-x-[50%] rounded-full bg-orange-600'>
                             </div>
                         </motion.div>
 
