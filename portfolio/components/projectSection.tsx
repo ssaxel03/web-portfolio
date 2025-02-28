@@ -11,7 +11,7 @@ export default function Projects() {
             <div id='projects-grid' className='w-full gap-5 items-center justify-center'>
 
                 {projects.list.map((project, index) => (
-                    <motion.div key={index} initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5, delay: index * 0.2 }}
+                    <motion.div key={index} initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.5, delay: index * 0.2 }}
                         className='w-full h-full'>
                         <div className='w-full h-full relative bg-neutral-800 hover:bg-orange-600 hover:scale-105 ease-in-out duration-300 rounded-md pt-2 pb-12 px-2'>
 

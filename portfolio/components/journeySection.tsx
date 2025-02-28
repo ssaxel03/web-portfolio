@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Journey() {
     return (
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.3 }}>
             <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl font-bold mb-4">Journey</motion.h2>
 
             <section className="flex flex-col gap-2 mb-16">
@@ -21,16 +21,16 @@ export default function Journey() {
 
 
                         <article className="flex flex-col">
-                            <motion.h3 initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }} className="text-xl mb-1">{experience.role} @ {experience.company}</motion.h3>
-                            <motion.p initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }} className="text-xl text-neutral-500 mb-1">{experience.date}</motion.p>
-                            <motion.div initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}>
+                            <motion.h3 initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl mb-1">{experience.role} @ {experience.company}</motion.h3>
+                            <motion.p initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl text-neutral-500 mb-1">{experience.date}</motion.p>
+                            <motion.div initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}>
                                 {experience.description}
                             </motion.div>
 
 
                             <section className="flex flex-row flex-wrap gap-2 w-full">
                                 {experience.technologies.map((tech, techIndex) => (
-                                    <motion.span initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.2, delay: techIndex * 0.25 }}
+                                    <motion.span initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2, delay: techIndex * 0.25 }}
                                         key={techIndex}
                                         className="bg-neutral-800 text-xl text-neutral-50 flex justify-center items-center rounded-md px-2 h-10 aspect-video"
                                         role="img"

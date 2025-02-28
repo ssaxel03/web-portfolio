@@ -26,14 +26,14 @@ function Page() {
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}
           className='w-full flex flex-row justify-between gap-2 relative mb-4'>
 
-          <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}>
+          <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}>
             <Link href="/" className='max-h-[36px] flex items-center justify-center aspect-square px-2 py-2 rounded-full bg-neutral-50 hover:bg-orange-600 hover:scale-105 duration-300 ease-in-out'>
               <LuArrowLeft className='text-xl text-neutral-950' />
             </Link>
           </motion.div>
 
 
-          <motion.span initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+          <motion.span initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
             className='flex flex-row gap-2 right-0 top-0'>
             {selectedProject.links.map((link, index) => (
 
@@ -54,19 +54,19 @@ function Page() {
           className='w-full mb-4'>
 
 
-          <motion.h1 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+          <motion.h1 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
             className="font-bold">{selectedProject.name}</motion.h1>
 
-          <motion.p initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+          <motion.p initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
           >{selectedProject.date}</motion.p>
 
 
-          <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+          <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
             className="font-bold mb-4">Tech stack</motion.h2>
 
           <section className="flex flex-row flex-wrap gap-2 w-full">
             {selectedProject.technologies.map((tech, techIndex) => (
-              <motion.span initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: techIndex * 0.2 }}
+              <motion.span initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.5, delay: techIndex * 0.2 }}
                 key={techIndex}
                 className="bg-neutral-800 text-neutral-50 flex justify-center items-center rounded-md px-2 h-10 aspect-video"
                 role="img"
@@ -83,10 +83,10 @@ function Page() {
         <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}
           className='w-full mb-4'>
 
-          <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+          <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
             className="font-bold mb-4">Description</motion.h2>
 
-          <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}>
+          <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}>
             {selectedProject.longDescription}
           </motion.div>
 
