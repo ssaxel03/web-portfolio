@@ -6,6 +6,7 @@ import { projects } from '@/data/portfolio-data';
 
 import { LuArrowLeft } from "react-icons/lu";
 import Link from 'next/link';
+import { motion } from "framer-motion";
 
 function Page() {
   const searchParams = useSearchParams()
@@ -22,14 +23,18 @@ function Page() {
 
       <article className='w-full'>
 
-        <div className='w-full flex flex-row justify-between gap-2 relative mb-4'>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}
+          className='w-full flex flex-row justify-between gap-2 relative mb-4'>
+
+          <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}>
+            <Link href="/" className='max-h-[36px] flex items-center justify-center aspect-square px-2 py-2 rounded-full bg-neutral-50 hover:bg-orange-600 hover:scale-105 duration-300 ease-in-out'>
+              <LuArrowLeft className='text-xl text-neutral-950' />
+            </Link>
+          </motion.div>
 
 
-          <Link href="/" className='max-h-[36px] flex items-center justify-center aspect-square px-2 py-2 rounded-full bg-neutral-50 hover:bg-orange-600 hover:scale-105 duration-300 ease-in-out'>
-            <LuArrowLeft className='text-xl text-neutral-950' />
-          </Link>
-
-          <span className='flex flex-row gap-2 right-0 top-0'>
+          <motion.span initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+            className='flex flex-row gap-2 right-0 top-0'>
             {selectedProject.links.map((link, index) => (
 
               <a
@@ -42,23 +47,26 @@ function Page() {
               </a>
 
             ))}
-          </span>
+          </motion.span>
+        </motion.div>
+
+        <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}
+          className='w-full mb-4'>
 
 
-        </div>
+          <motion.h1 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+            className="font-bold">{selectedProject.name}</motion.h1>
 
-        <section className='w-full mb-4'>
-
-
-          <h1 className="font-bold">{selectedProject.name}</h1>
-          <p>{selectedProject.date}</p>
+          <motion.p initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+          >{selectedProject.date}</motion.p>
 
 
-          <h2 className="font-bold mb-4">Tech stack</h2>
+          <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+            className="font-bold mb-4">Tech stack</motion.h2>
 
           <section className="flex flex-row flex-wrap gap-2 w-full">
             {selectedProject.technologies.map((tech, techIndex) => (
-              <span
+              <motion.span initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: techIndex * 0.2 }}
                 key={techIndex}
                 className="bg-neutral-800 text-neutral-50 flex justify-center items-center rounded-md px-2 h-10 aspect-video"
                 role="img"
@@ -66,19 +74,23 @@ function Page() {
               >
                 {tech.icon}
                 <span className="sr-only">{tech.ariaLabel}</span>
-              </span>
+              </motion.span>
             ))}
           </section>
 
-        </section>
+        </motion.section>
 
-        <section className='w-full mb-4'>
+        <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}
+          className='w-full mb-4'>
 
-          <h2 className="font-bold mb-4">Description</h2>
+          <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}
+            className="font-bold mb-4">Description</motion.h2>
 
-          {selectedProject.longDescription}
+          <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }}>
+            {selectedProject.longDescription}
+          </motion.div>
 
-        </section>
+        </motion.section>
 
 
 
