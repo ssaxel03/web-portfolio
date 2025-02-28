@@ -30,11 +30,20 @@ export async function generateMetadata(
       description: `${project.shortDescription}`,
       url: `https://ssaxel03.com/projects/${project.id}`,
       type: 'website',
+      images: [
+        {
+          url: '/og-image.jpg', // Create an image for social sharing
+          width: 1200,
+          height: 630,
+          alt: `${details.name} - ${details.role}`
+        }
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${project.name} - ${details.name} - ${details.role}`,
       description: `${project.shortDescription}`,
+      images: ['/og-image.jpg'],
     },
     icons: {
       icon: '/favicon.png', // Change this to your actual favicon path and format
