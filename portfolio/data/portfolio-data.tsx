@@ -13,6 +13,7 @@ export const details = {
 
 export const about = {
     message: <p className='text-xl text-justify'>I'm a <span className='text-orange-600 font-bold'><strong>software developer</strong></span> focused on building web applications that <span className='text-orange-600 font-bold'><strong>solve real problems</strong></span>. When I'm not solving problems I enjoy weightlifting, martial arts and archery.</p>,
+    metadata: "Software developer skilled in .NET, React and Node.",
 }
 
 export const socials = {
