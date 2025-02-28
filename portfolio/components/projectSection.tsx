@@ -18,7 +18,7 @@ export default function Projects() {
 
                             <Link
                                 href={'/project?id=' + project.id}>
-                                <h3 className='text-xl mb-1'>{project.name}</h2>
+                                <h3 className='text-xl mb-1'>{project.name}</h3>
                                 <p className='text-xl mb-1 text-justify'>{project.shortDescription}</p>
 
                                 <div className='flex flex-row gap-2 absolute bottom-2 left-2'>
