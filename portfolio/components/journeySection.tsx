@@ -32,12 +32,15 @@ export default function Journey() {
                                 {experience.technologies.map((tech, techIndex) => (
                                     <motion.span initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2, delay: techIndex * 0.25 }}
                                         key={techIndex}
-                                        className="bg-neutral-800 text-xl text-neutral-50 flex justify-center items-center rounded-md px-2 h-10 aspect-video"
+                                        className="group relative bg-neutral-800 text-xl text-neutral-50 flex justify-center items-center rounded-md px-2 h-10 aspect-video"
                                         role="img"
                                         aria-label={tech.ariaLabel}
                                     >
                                         {tech.icon}
                                         <span className="sr-only">{tech.ariaLabel}</span>
+                                        <span className="absolute hidden group-hover:block bg-neutral-800 text-white text-xl px-2 py-1 rounded-md bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap shadow-lg">
+                                            {tech.name}
+                                        </span>
                                     </motion.span>
                                 ))}
                             </section>

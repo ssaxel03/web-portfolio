@@ -23,12 +23,15 @@ export default function Projects() {
                                     {project.technologies.map((tech, techIndex) => (
                                         <span
                                             key={techIndex}
-                                            className="text-xl"
+                                            className="text-xl relative group"
                                             role="img"
                                             aria-label={tech.ariaLabel}
                                         >
                                             {tech.icon}
                                             <span className="sr-only">{tech.ariaLabel}</span>
+                                            <span className="absolute hidden group-hover:block bg-neutral-800 text-white text-xl px-2 py-1 rounded-md bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap shadow-lg">
+                                                {tech.name}
+                                            </span>
                                         </span>
                                     ))}
 
