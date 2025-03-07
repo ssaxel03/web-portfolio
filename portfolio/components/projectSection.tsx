@@ -16,7 +16,7 @@ export default function Projects() {
                         <Link href={'/project?id=' + project.id}>
                             <div className='w-full h-full relative bg-neutral-800 hover:bg-orange-600 hover:scale-105 ease-in-out duration-300 rounded-md pt-2 pb-12 px-2'>
                                 <h3 className='text-xl mb-1'>{project.name}</h3>
-                                <p className='text-xl mb-1 text-justify'>{project.shortDescription}</p>
+                                <p className='text-xl mb-1 text-justify text-neutral-300'>{project.shortDescription}</p>
 
                                 <div className='flex flex-row gap-2 absolute bottom-2 left-2'>
 
@@ -29,7 +29,7 @@ export default function Projects() {
                                         >
                                             {tech.icon}
                                             <span className="sr-only">{tech.ariaLabel}</span>
-                                            <span className="absolute hidden group-hover:block bg-neutral-800 text-white text-xl px-2 py-1 rounded-md bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap shadow-lg">
+                                            <span className="absolute hidden group-hover:block bg-neutral-800 text-neutral-300 text-xl px-2 py-1 rounded-md bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap shadow-lg">
                                                 {tech.name}
                                             </span>
                                         </span>

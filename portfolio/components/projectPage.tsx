@@ -19,7 +19,7 @@ function Page() {
 
   return (
 
-    <main className="flex flex-col w-full justify-center items-start sm:w-4/6 px-2 py-2 lg:px-0 lg:py-12 text-xl">
+    <main className="flex flex-col w-full justify-center items-start text-neutral-50 sm:w-4/6 px-2 py-2 lg:px-0 lg:py-12 text-xl">
 
       <article className='w-full'>
 
@@ -58,7 +58,7 @@ function Page() {
             className="font-bold">{selectedProject.name}</motion.h1>
 
           <motion.p initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
-          >{selectedProject.date}</motion.p>
+          className='text-neutral-300'>{selectedProject.date}</motion.p>
 
 
           <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
@@ -74,7 +74,7 @@ function Page() {
               >
                 {tech.icon}
                 <span className="sr-only">{tech.ariaLabel}</span>
-                <span className="absolute hidden group-hover:block bg-neutral-800 text-white text-xl px-2 py-1 rounded-md bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap shadow-lg">
+                <span className="absolute hidden group-hover:block bg-neutral-800 text-neutral-300 text-xl px-2 py-1 rounded-md bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap shadow-lg">
                   {tech.name}
                 </span>
               </motion.span>
@@ -89,7 +89,8 @@ function Page() {
           <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
             className="font-bold mb-4">Description</motion.h2>
 
-          <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}>
+          <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}
+          className='text-neutral-300'>
             {selectedProject.longDescription}
           </motion.div>
 

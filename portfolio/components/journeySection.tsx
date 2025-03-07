@@ -23,7 +23,7 @@ export default function Journey() {
                         <article className="flex flex-col">
                             <motion.h3 initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl mb-1">{experience.role} @ {experience.company}</motion.h3>
                             <motion.p initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl text-neutral-500 mb-1">{experience.date}</motion.p>
-                            <motion.div initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }}>
+                            <motion.div initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl text-neutral-300">
                                 {experience.description}
                             </motion.div>
 
@@ -38,7 +38,7 @@ export default function Journey() {
                                     >
                                         {tech.icon}
                                         <span className="sr-only">{tech.ariaLabel}</span>
-                                        <span className="absolute hidden group-hover:block bg-neutral-800 text-white text-xl px-2 py-1 rounded-md bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap shadow-lg">
+                                        <span className="absolute hidden group-hover:block bg-neutral-800 text-neutral-300 text-xl px-2 py-1 rounded-md bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap shadow-lg">
                                             {tech.name}
                                         </span>
                                     </motion.span>

@@ -1,3 +1,4 @@
+import Hero from '@/components/heroSection';
 import Details from '@/components/detailSection';
 import About from '@/components/aboutSection';
 import Socials from '@/components/socialSection';
@@ -59,53 +60,42 @@ export const metadata: Metadata = {
 
 export default function Page() {
 
-    return (
-        <main className="flex flex-col w-full justify-center items-start sm:w-4/6 px-2 py-2 lg:px-0 lg:py-12">
+  return (
+    <main className="flex flex-col w-full justify-center items-start sm:w-4/6 px-2 pb-2 lg:px-0 lg:pb-12">
 
-            <section className='flex flex-col lg:flex-row gap-y-2 lg:gap-y-0 mb-4'>
+      <Hero />
 
+      <section id="projects" className='w-full mb-16'>
 
-                <Details />
+        <Projects />
 
-                <About />
-
-            </section>
-
-            <Socials />
-
-            <Divider/>
-
-            <section className='w-full mb-16'>
-
-                <Projects />
-
-            </section>
+      </section>
 
 
-            <Divider/>
+      <Divider />
 
-            <section className='w-full mb-16'>
+      <section className='w-full mb-16'>
 
-                <Skills />
+        <Skills />
 
-            </section>
+      </section>
 
 
-            <Divider/>
+      <Divider />
 
-            <section className='w-full'>
+      <section className='w-full'>
 
-                <Journey />
+        <Journey />
 
-            </section>
+      </section>
 
-            <Divider/>
+      <Divider />
 
-            <section className='w-full'>
+      <Socials />
 
-                <ContactForm />
+      <Divider />
 
-            </section>
-        </main>
-    );
+      <ContactForm />
+    </main>
+  );
 }

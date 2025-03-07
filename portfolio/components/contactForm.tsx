@@ -40,7 +40,8 @@ export default function Contact() {
   return (
     <motion.form initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}
       id="contact"
-      onSubmit={handleSubmitUI}>
+      onSubmit={handleSubmitUI}
+      className='w-full'>
 
       <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl font-bold mb-4">Contact me</motion.h2>
 

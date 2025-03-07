@@ -16,6 +16,13 @@ export const about = {
     metadata: "Software developer skilled in .NET, React and Node.",
 }
 
+export const cv = {
+    name: "CV",
+    url: "/CV_axelsoares_2025_01_13.pdf",
+    target: "_blank",
+    icon: "Download my CV",
+}
+
 export const socials = {
     list: [
         {
@@ -35,18 +42,6 @@ export const socials = {
             url: "https://wa.me/351932670851",
             target: "_blank",
             icon: <SiWhatsapp aria-label='WhatsApp' className='text-xl' />
-        },
-        {
-            name: "Email",
-            url: "#contact",
-            target: "_self",
-            icon: <LuMail aria-label='Email' className='text-xl' />
-        },
-        {
-            name: "CV",
-            url: "/CV_axelsoares_2025_01_13.pdf",
-            target: "_blank",
-            icon: "Download my CV",
         },
     ],
 }

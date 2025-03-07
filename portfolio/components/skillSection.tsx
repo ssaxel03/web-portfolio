@@ -66,7 +66,7 @@ export default function Skills() {
                             key={index}
                             className="flex text-neutral-50 justify-center items-center flex-col gap-2">
                             {skill.icon}
-                            <p className="text-sm">{skill.name}</p>
+                            <p className="text-sm text-neutral-300">{skill.name}</p>
                         </motion.article>
                     ))}
                 </section>
