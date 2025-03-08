@@ -75,7 +75,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 1.2 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2"
+                className="absolute bottom-24 lg:bottom-8 left-1/2 -translate-x-1/2"
             >
                 <div className="animate-bounce">
                     <a href="#projects">
