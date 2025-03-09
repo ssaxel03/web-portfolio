@@ -172,7 +172,7 @@ export const projects = {
         {
             name: 'NecroNibbler',
             id: 'necronibbler',
-            date: 'Oct 2024 - Nov 2024',
+            date: 'Oct 2024',
             shortDescription: 'Necro Nibbler is a Java-based top-down shooter that features zombies, resource management and a variety of weapons. Do you have what it takes to take all the zombies down and escape?',
             longDescription:
                 <>
@@ -225,6 +225,79 @@ export const projects = {
                     url: "https://ssaxel03.itch.io/necronibbler",
                     target: "_blank",
                     icon: <LuLink />,
+                },
+            ]
+        },
+        {
+            name: 'Drawing Board',
+            id: 'drawingboard',
+            date: 'Oct 2024',
+            shortDescription: 'Java-based drawing board featuring the ability to paint and erase cells and save and load canvases.',
+            longDescription:
+                <>
+                    <h3 className='mb-4'>Summary</h3>
+
+                    <p className='text-justify mb-2'>The Drawing Board is a Java-based tool for creating grid-based artwork. Users can interact with a grid where each cell represents a "pixel," allowing for intuitive painting and erasing. This makes it an ideal platform for designing pixel-style art or simple patterns. Its straightforward interface ensures that users of all skill levels can easily engage with the application.</p>
+
+                    <p className='text-justify mb-4'>One of its key features is the ability to save and load canvases. Users can save their creations to a file and reload them later, making it convenient to resume projects or refine previous designs. Lightweight yet versatile, the Drawing Board combines simplicity with practical functionality, offering an enjoyable experience for digital art creation.</p>
+
+                    <h3 className='mb-4'>Functionality</h3>
+
+                    <ul className='text-justify list-disc ml-5 mb-4'>
+                        <li className="mb-1">Allows users to interact with a grid where each cell can be painted or erased</li>
+                        <li className="mb-1">Lets users save their current artwork to a file for future use</li>
+                        <li className="mb-1">Allows previously saved canvases to be reloaded and edited</li>
+                        <li className="mb-1">Focuses on simplicity and efficiency for smooth operation</li>
+                    </ul>
+
+                    <h3 className="mb-4">How to run</h3>
+
+                    <ul className="text-justify list-disc ml-5 mb-4">
+                        <li className='mb-1'>Make sure you have Java installed on your computer (Java 8 or higher recommended)</li>
+                        <li className='mb-1'>Download the latest .jar file from the <a className='text-orange-600' href='https://github.com/ssaxel03/drawing-board/releases'>Releases</a> section</li>
+                        <li className='mb-1'>Double-click the .jar file to run the application or run from command line: java -jar DrawingBoard-vX.X.X.jar</li>
+                    </ul>
+
+                    <h3 className="mb-4">Controls</h3>
+
+                    <ul className="text-justify list-disc ml-5 mb-4">
+                        <li className='mb-1'>Arrow keys: Navigate the canvas</li>
+                        <li className='mb-1'>Space: draw or erase the current cell</li>
+                        <li className='mb-1'>S: Save your canvas</li>
+                        <li className='mb-1'>L: Load a previously saved canvas</li>
+                        <li className='mb-1'>C: Clear the entire canvas</li>
+                    </ul>
+
+                    <h3 className="mb-4">File storage</h3>
+
+                    <p className='text-justify mb-4'>Saved canvases are stored in your Pictures folder under a directory called "DrawingBoard" with the .canvas extension.</p>
+                </>,
+            technologies: [
+                {
+                    name: "Java",
+                    icon: <i className="devicon-java-plain"></i>,
+                    category: "language",
+                    ariaLabel: "Java"
+                },
+                {
+                    name: "IntelliJ",
+                    icon: <i className="devicon-intellij-plain"></i>,
+                    category: "tool",
+                    ariaLabel: "IntelliJ"
+                },
+                {
+                    name: "Git",
+                    icon: <i className="devicon-git-plain"></i>,
+                    category: "other",
+                    ariaLabel: "Git"
+                },
+            ],
+            links: [
+                {
+                    name: "GitHub",
+                    url: "https://github.com/ssaxel03/drawing-board",
+                    target: "_blank",
+                    icon: <i className="devicon-github-original"></i>,
                 },
             ]
         },
