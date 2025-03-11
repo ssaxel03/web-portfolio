@@ -3,6 +3,7 @@ import { details } from "@/data/portfolio-data";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { cv } from '@/data/portfolio-data';
+import { about } from "@/data/portfolio-data";
 
 export default function HeroSection() {
     return (
@@ -43,7 +44,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="text-xl mb-8 max-w-xl text-center text-neutral-300"
             >
-                I'm a developer based in Porto focused on delivering both web and desktop solutions that tackle real problems.
+                {about.message}
             </motion.p>
 
             <motion.div
@@ -55,11 +56,6 @@ export default function HeroSection() {
                 <Link className="w-full lg:w-auto" href="#projects">
                     <button className="w-full px-8 py-2 bg-orange-600 text-xl text-white rounded-md hover:bg-orange-500 hover:scale-105 ease-in-out duration-300 transition-all duration-300">
                         Some of my work
-                    </button>
-                </Link>
-                <Link className="w-full lg:w-auto" href="#contact">
-                    <button className="w-full px-8 py-2 bg-neutral-800 text-xl text-neutral-50 rounded-md hover:bg-orange-600 hover:scale-105 ease-in-out duration-300 transition-all duration-300">
-                        Let's work together
                     </button>
                 </Link>
                 <a  href={cv.url}

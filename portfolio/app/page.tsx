@@ -10,7 +10,6 @@ import { Metadata } from 'next';
 
 const nameArray = details.name.split(" ");
 const roleArray = details.role.split(" ");
-const locationArray = details.location.split(", ");
 const skillsArray = skills.list.map((skill) => skill.name);
 const companiesArray = journey.list.map((exp) => exp.company);
 
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
   },
   description: `${about.metadata}`,
-  keywords: [...nameArray, ...roleArray, ...locationArray, ...skillsArray, ...companiesArray],
+  keywords: [...nameArray, ...roleArray, ...skillsArray, ...companiesArray],
   authors: [{ name: `${details.name}` }],
   creator: `${details.name}`,
   publisher: `${details.name}`,
