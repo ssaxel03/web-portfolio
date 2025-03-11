@@ -1,6 +1,4 @@
 import Hero from '@/components/heroSection';
-import Details from '@/components/detailSection';
-import About from '@/components/aboutSection';
 import Socials from '@/components/socialSection';
 import Projects from '@/components/projectSection';
 import Skills from '@/components/skillSection';
