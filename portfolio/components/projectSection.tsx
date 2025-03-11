@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
     return (
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }} >
+        <motion.div id="projects" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.3 }}
+            className="w-full py-8">
             <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.2 }} className='text-xl font-bold mb-4'>Projects</motion.h2>
 
             <div id='projects-grid' className='w-full gap-5 items-center justify-center'>

@@ -11,7 +11,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col items-center justify-center w-full min-h-[100svh] relative mb-16"
+            className="flex flex-col items-center justify-center w-full min-h-[100svh] relative mb-8"
         >
             <motion.h1
                 initial={{ opacity: 0, y: 20 }}

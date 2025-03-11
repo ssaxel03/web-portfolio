@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 
 export default function Journey() {
     return (
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.3 }}>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.3 }}
+        className="w-full py-8">
             <motion.h2 initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.2 }} className="text-xl font-bold mb-4">Journey</motion.h2>
 
-            <section className="flex flex-col gap-2 mb-16">
+            <section className="flex flex-col gap-2">
                 {journey.list.map((experience, index) => (
                     <motion.div initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.5 }}
                         key={index}

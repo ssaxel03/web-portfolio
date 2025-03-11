@@ -62,29 +62,15 @@ export default function Page() {
 
       <Hero />
 
-      <section id="projects" className='w-full mb-16'>
-
-        <Projects />
-
-      </section>
-
+      <Projects />
 
       <Divider />
 
-      <section className='w-full mb-16'>
-
-        <Skills />
-
-      </section>
-
+      <Skills />
 
       <Divider />
 
-      <section className='w-full'>
-
-        <Journey />
-
-      </section>
+      <Journey />
 
       <Divider />
 
