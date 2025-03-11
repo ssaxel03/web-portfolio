@@ -41,6 +41,7 @@ The portfolio is built using the following technologies:
 2. Navigate to the project directory
    ```bash
    cd web-portfolio
+   cd portfolio
    ```
 
 3. Install dependencies
