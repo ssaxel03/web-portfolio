@@ -6,6 +6,171 @@ import {
 import { LuLink } from "react-icons/lu";
 
 const techList = {
+
+    csharpxl: {
+        name: "C#",
+        icon: <i className="devicon-csharp-plain text-xl"></i>,
+        category: "language",
+        ariaLabel: "C Sharp"
+    },
+    javaxl: {
+        name: "Java",
+        icon: <i className="devicon-java-plain text-xl"></i>,
+        category: "language",
+        ariaLabel: "Java"
+    },
+    htmlxl: {
+        name: "HTML",
+        icon: <i className="devicon-html5-plain text-xl"></i>,
+        category: "language",
+        ariaLabel: "HTML"
+    },
+    cssxl: {
+        name: "CSS",
+        icon: <i className="devicon-css3-plain text-xl"></i>,
+        category: "language",
+        ariaLabel: "CSS"
+    },
+    javascriptxl: {
+        name: "JavaScript",
+        icon: <i className="devicon-javascript-plain text-xl"></i>,
+        category: "language",
+        ariaLabel: "Java Script"
+    },
+    phpxl: {
+        name: "PHP",
+        icon: <i className="devicon-php-plain text-xl"></i>,
+        category: "language",
+        ariaLabel: "PHP"
+    },
+    dotnetxl: {
+        name: ".NET",
+        icon: <i className="devicon-dot-net-plain text-xl"></i>,
+        category: "framework",
+        ariaLabel: "Dot Net"
+    },
+    springxl: {
+        name: "Spring Boot",
+        icon: <i className="devicon-spring-plain text-xl"></i>,
+        category: "framework",
+        ariaLabel: "Spring Boot"
+    },
+    typescriptxl: {
+        name: "Typescript",
+        icon: <i className="devicon-typescript-plain text-xl"></i>,
+        category: "framework",
+        ariaLabel: "Typescript"
+    },
+    reactxl: {
+        name: "React.js",
+        icon: <i className="devicon-react-plain text-xl"></i>,
+        category: "framework",
+        ariaLabel: "React"
+    },
+    nextxl: {
+        name: "Next.js",
+        icon: <i className="devicon-nextjs-plain text-xl"></i>,
+        category: "framework",
+        ariaLabel: "Next"
+    },
+    nodexl: {
+        name: "Node.js",
+        icon: <i className="devicon-nodejs-plain text-xl"></i>,
+        category: "framework",
+        ariaLabel: "Node"
+    },
+    expressxl: {
+        name: "Express.js",
+        icon: <i className="devicon-express-original text-xl"></i>,
+        category: "framework",
+        ariaLabel: "Express"
+    },
+    tailwindxl: {
+        name: "TailwindCSS",
+        icon: <i className="devicon-tailwindcss-original text-xl"></i>,
+        category: "framework",
+        ariaLabel: "Tailwind"
+    },
+    unityxl: {
+        name: "Unity",
+        icon: <i className="devicon-unity-plain text-xl"></i>,
+        category: "framework",
+        ariaLabel: "Unity"
+    },
+    godotxl: {
+        name: "Godot",
+        icon: <i className="devicon-godot-plain text-xl"></i>,
+        category: "framework",
+        ariaLabel: "Godot"
+    },
+    junitxl: {
+        name: "JUnit",
+        icon: <i className="devicon-junit-plain text-xl"></i>,
+        category: "testing",
+        ariaLabel: "J Unit"
+    },
+    mysqlxl: {
+        name: "MySQL",
+        icon: <i className="devicon-mysql-original text-xl"></i>,
+        category: "database",
+        ariaLabel: "My SQL"
+    },
+    mariaxl: {
+        name: "MariaDB",
+        icon: <i className="devicon-mariadb-original text-xl"></i>,
+        category: "database",
+        ariaLabel: "Maria DB"
+    },
+    postgresxl: {
+        name: "PostgreSQL",
+        icon: <i className="devicon-postgresql-plain text-xl"></i>,
+        category: "database",
+        ariaLabel: "Postgre SQL"
+    },
+    mongoxl: {
+        name: "MongoDB",
+        icon: <i className="devicon-mongodb-plain text-xl"></i>,
+        category: "database",
+        ariaLabel: "Mongo DB"
+    },
+    vscodexl: {
+        name: "VS Code",
+        icon: <i className="devicon-vscode-plain text-xl"></i>,
+        category: "tool",
+        ariaLabel: "VS Code"
+    },
+    intellijxl: {
+        name: "IntelliJ",
+        icon: <i className="devicon-intellij-plain text-xl"></i>,
+        category: "tool",
+        ariaLabel: "IntelliJ"
+    },
+    awsxl: {
+        name: "AWS",
+        icon: <i className="devicon-amazonwebservices-plain text-xl"></i>,
+        category: "other",
+        ariaLabel: "AWS"
+    },
+    gitxl: {
+        name: "Git",
+        icon: <i className="devicon-git-plain text-xl"></i>,
+        category: "other",
+        ariaLabel: "Git"
+    },
+    linuxxl: {
+        name: "Linux",
+        icon: <i className="devicon-linux-plain text-xl"></i>,
+        category: "other",
+        ariaLabel: "Linux"
+    },
+    nginxxl: {
+        name: "Nginx",
+        icon: <i className="devicon-nginx-plain text-xl"></i>,
+        category: "other",
+        ariaLabel: "Nginx"
+    },
+
+
     csharp: {
         name: "C#",
         icon: <i className="devicon-csharp-plain text-4xl"></i>,
@@ -256,16 +421,16 @@ export const projects = {
                     </ul>
                 </>,
             technologies: [
-                techList.javascript,
-                techList.react,
-                techList.next,
-                techList.node,
-                techList.express,
-                techList.tailwind,
-                techList.postgres,
-                techList.aws,
-                techList.git,
-                techList.nginx,
+                techList.javascriptxl,
+                techList.reactxl,
+                techList.nextxl,
+                techList.nodexl,
+                techList.expressxl,
+                techList.tailwindxl,
+                techList.postgresxl,
+                techList.awsxl,
+                techList.gitxl,
+                techList.nginxxl,
             ],
             links: [
                 {
@@ -307,9 +472,9 @@ export const projects = {
                     </ul>
                 </>,
             technologies: [
-                techList.java,
-                techList.intellij,
-                techList.git,
+                techList.javaxl,
+                techList.intellijxl,
+                techList.gitxl,
             ],
             links: [
                 {
@@ -371,9 +536,9 @@ export const projects = {
                     <p className='text-justify mb-4'>Saved canvases are stored in your Pictures folder under a directory called "DrawingBoard" with the .canvas extension.</p>
                 </>,
             technologies: [
-                techList.java,
-                techList.intellij,
-                techList.git,
+                techList.javaxl,
+                techList.intellijxl,
+                techList.gitxl,
             ],
             links: [
                 {
@@ -405,10 +570,10 @@ export const projects = {
                     </ul>
                 </>,
             technologies: [
-                techList.csharp,
-                techList.unity,
-                techList.vscode,
-                techList.git,
+                techList.csharpxl,
+                techList.unityxl,
+                techList.vscodexl,
+                techList.gitxl,
             ],
             links: [
                 {
@@ -470,23 +635,23 @@ export const journey = {
             date: "09/2024 - 12/2024",
             description: <p className='text-xl mb-2 text-justify mb-1'>Completed an intensive 14-week bootcamp focused on modern web development. Gained hands-on experience with Java, Spring, JUnit, JavaScript, AWS and Git, among other technologies. Applied these skills in a team setting using Scrum and best practices like code reviews. As a final project, co-developed SAM, a platform for reporting local occurrences, contributing to both the backend with Node.js, Express.js and PostgreSQL and the frontend with Next.js.</p>,
             technologies: [
-                techList.java,
-                techList.html,
-                techList.css,
-                techList.javascript,
-                techList.spring,
-                techList.react,
-                techList.next,
-                techList.node,
-                techList.express,
-                techList.junit,
-                techList.mysql,
-                techList.postgres,
-                techList.vscode,
-                techList.intellij,
-                techList.aws,
-                techList.git,
-                techList.nginx,
+                techList.javaxl,
+                techList.htmlxl,
+                techList.cssxl,
+                techList.javascriptxl,
+                techList.springxl,
+                techList.reactxl,
+                techList.nextxl,
+                techList.nodexl,
+                techList.expressxl,
+                techList.junitxl,
+                techList.mysqlxl,
+                techList.postgresxl,
+                techList.vscodexl,
+                techList.intellijxl,
+                techList.awsxl,
+                techList.gitxl,
+                techList.nginxxl,
             ]
         },
         {
@@ -495,13 +660,13 @@ export const journey = {
             date: "09/2022 - 12/2022",
             description: <p className='text-xl mb-2 text-justify mb-1'>Developed a user-friendly web application for a transport company to streamline its operations. Designed a clean and intuitive UI with React, enabling seamless management of company resources like inventory and deliveries. Built a robust REST API using .NET, integrated with a MongoDB database, to ensure efficient data handling and scalability.</p>,
             technologies: [
-                techList.csharp,
-                techList.javascript,
-                techList.dotnet,
-                techList.react,
-                techList.mongo,
-                techList.vscode,
-                techList.git,
+                techList.csharpxl,
+                techList.javascriptxl,
+                techList.dotnetxl,
+                techList.reactxl,
+                techList.mongoxl,
+                techList.vscodexl,
+                techList.gitxl,
             ]
         },
         {
@@ -510,11 +675,11 @@ export const journey = {
             date: "01/2022 - 05/2022",
             description: <p className='text-xl mb-2 text-justify mb-1'>Created a new infirmary window interface for the M1, a flagship software used by hospitals, clinics and health centers to manage patient records, medical procedures and financial operations. Developed the interface using Windows Forms and implemented a REST API with .NET to ensure smooth functionality and integration with the existing system.</p>,
             technologies: [
-                techList.csharp,
-                techList.dotnet,
-                techList.mysql,
-                techList.vscode,
-                techList.git,
+                techList.csharpxl,
+                techList.dotnetxl,
+                techList.mysqlxl,
+                techList.vscodexl,
+                techList.gitxl,
             ]
         },
         {
@@ -523,12 +688,12 @@ export const journey = {
             date: "09/2020 - 06/2021",
             description: <p className='text-xl mb-2 text-justify mb-1'>Developed an archive website to centralize and showcase publications and institutional news. Designed the front-end using HTML, CSS and JavaScript to ensure a responsive and visually appealing user experience. Built the back-end logic with PHP and used a MySQL database to efficiently store, retrieve and manage content, ensuring seamless data handling for the institution.</p>,
             technologies: [
-                techList.html,
-                techList.css,
-                techList.javascript,
-                techList.php,
-                techList.vscode,
-                techList.git,
+                techList.htmlxl,
+                techList.cssxl,
+                techList.javascriptxl,
+                techList.phpxl,
+                techList.vscodexl,
+                techList.gitxl,
             ]
         },
         {
@@ -537,15 +702,15 @@ export const journey = {
             date: "09/2018 - 06/2021",
             description: <p className='text-xl mb-2 text-justify mb-1'>Acquired core skills in software development, multimedia production, network and database management and system configuration. I came out prepared to take on roles in software development, IT support or digital design.</p>,
             technologies: [
-                techList.csharp,
-                techList.html,
-                techList.css,
-                techList.javascript,
-                techList.dotnet,
-                techList.mysql,
-                techList.maria,
-                techList.vscode,
-                techList.git,
+                techList.csharpxl,
+                techList.htmlxl,
+                techList.cssxl,
+                techList.javascriptxl,
+                techList.dotnetxl,
+                techList.mysqlxl,
+                techList.mariaxl,
+                techList.vscodexl,
+                techList.gitxl,
             ]
         }
     ]
