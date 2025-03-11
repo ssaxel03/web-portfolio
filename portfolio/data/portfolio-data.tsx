@@ -5,6 +5,171 @@ import {
 
 import { LuLink } from "react-icons/lu";
 
+const techList = {
+    csharp: {
+        name: "C#",
+        icon: <i className="devicon-csharp-plain text-4xl"></i>,
+        category: "language",
+        ariaLabel: "C Sharp"
+    },
+    java: {
+        name: "Java",
+        icon: <i className="devicon-java-plain text-4xl"></i>,
+        category: "language",
+        ariaLabel: "Java"
+    },
+    html: {
+        name: "HTML",
+        icon: <i className="devicon-html5-plain text-4xl"></i>,
+        category: "language",
+        ariaLabel: "HTML"
+    },
+    css: {
+        name: "CSS",
+        icon: <i className="devicon-css3-plain text-4xl"></i>,
+        category: "language",
+        ariaLabel: "CSS"
+    },
+    javascript: {
+        name: "JavaScript",
+        icon: <i className="devicon-javascript-plain text-4xl"></i>,
+        category: "language",
+        ariaLabel: "Java Script"
+    },
+    php: {
+        name: "PHP",
+        icon: <i className="devicon-php-plain text-4xl"></i>,
+        category: "language",
+        ariaLabel: "PHP"
+    },
+    dotnet: {
+        name: ".NET",
+        icon: <i className="devicon-dot-net-plain text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "Dot Net"
+    },
+    spring: {
+        name: "Spring Boot",
+        icon: <i className="devicon-spring-plain text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "Spring Boot"
+    },
+    typescript: {
+        name: "Typescript",
+        icon: <i className="devicon-typescript-plain text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "Typescript"
+    },
+    react: {
+        name: "React.js",
+        icon: <i className="devicon-react-plain text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "React"
+    },
+    next: {
+        name: "Next.js",
+        icon: <i className="devicon-nextjs-plain text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "Next"
+    },
+    node: {
+        name: "Node.js",
+        icon: <i className="devicon-nodejs-plain text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "Node"
+    },
+    express: {
+        name: "Express.js",
+        icon: <i className="devicon-express-original text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "Express"
+    },
+    tailwind: {
+        name: "TailwindCSS",
+        icon: <i className="devicon-tailwindcss-original text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "Tailwind"
+    },
+    unity: {
+        name: "Unity",
+        icon: <i className="devicon-unity-plain text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "Unity"
+    },
+    godot: {
+        name: "Godot",
+        icon: <i className="devicon-godot-plain text-4xl"></i>,
+        category: "framework",
+        ariaLabel: "Godot"
+    },
+    junit: {
+        name: "JUnit",
+        icon: <i className="devicon-junit-plain text-4xl"></i>,
+        category: "testing",
+        ariaLabel: "J Unit"
+    },
+    mysql: {
+        name: "MySQL",
+        icon: <i className="devicon-mysql-original text-4xl"></i>,
+        category: "database",
+        ariaLabel: "My SQL"
+    },
+    maria: {
+        name: "MariaDB",
+        icon: <i className="devicon-mariadb-original text-4xl"></i>,
+        category: "database",
+        ariaLabel: "Maria DB"
+    },
+    postgres: {
+        name: "PostgreSQL",
+        icon: <i className="devicon-postgresql-plain text-4xl"></i>,
+        category: "database",
+        ariaLabel: "Postgre SQL"
+    },
+    mongo: {
+        name: "MongoDB",
+        icon: <i className="devicon-mongodb-plain text-4xl"></i>,
+        category: "database",
+        ariaLabel: "Mongo DB"
+    },
+    vscode: {
+        name: "VS Code",
+        icon: <i className="devicon-vscode-plain text-4xl"></i>,
+        category: "tool",
+        ariaLabel: "VS Code"
+    },
+    intellij: {
+        name: "IntelliJ",
+        icon: <i className="devicon-intellij-plain text-4xl"></i>,
+        category: "tool",
+        ariaLabel: "IntelliJ"
+    },
+    aws: {
+        name: "AWS",
+        icon: <i className="devicon-amazonwebservices-plain text-4xl"></i>,
+        category: "other",
+        ariaLabel: "AWS"
+    },
+    git: {
+        name: "Git",
+        icon: <i className="devicon-git-plain text-4xl"></i>,
+        category: "other",
+        ariaLabel: "Git"
+    },
+    linux: {
+        name: "Linux",
+        icon: <i className="devicon-linux-plain text-4xl"></i>,
+        category: "other",
+        ariaLabel: "Linux"
+    },
+    nginx: {
+        name: "Nginx",
+        icon: <i className="devicon-nginx-plain text-4xl"></i>,
+        category: "other",
+        ariaLabel: "Nginx"
+    },
+}
+
 export const details = {
     name: "Axel Soares",
     role: "Software Developer"
@@ -91,67 +256,16 @@ export const projects = {
                     </ul>
                 </>,
             technologies: [
-
-                {
-                    name: "JavaScript",
-                    icon: <i className="devicon-javascript-plain"></i>,
-                    category: "language",
-                    ariaLabel: "Java Script"
-                },
-                {
-                    name: "React.js",
-                    icon: <i className="devicon-react-plain"></i>,
-                    category: "framework",
-                    ariaLabel: "React"
-                },
-                {
-                    name: "Next.js",
-                    icon: <i className="devicon-nextjs-plain"></i>,
-                    category: "framework",
-                    ariaLabel: "Next"
-                },
-                {
-                    name: "Node.js",
-                    icon: <i className="devicon-nodejs-plain"></i>,
-                    category: "framework",
-                    ariaLabel: "Node"
-                },
-                {
-                    name: "Express.js",
-                    icon: <i className="devicon-express-original"></i>,
-                    category: "framework",
-                    ariaLabel: "Express"
-                },
-                {
-                    name: "TailwindCSS",
-                    icon: <i className="devicon-tailwindcss-original"></i>,
-                    category: "framework",
-                    ariaLabel: "Tailwind"
-                },
-                {
-                    name: "PostgreSQL",
-                    icon: <i className="devicon-postgresql-plain"></i>,
-                    category: "database",
-                    ariaLabel: "Postgre SQL"
-                },
-                {
-                    name: "AWS",
-                    icon: <i className="devicon-amazonwebservices-plain"></i>,
-                    category: "other",
-                    ariaLabel: "AWS"
-                },
-                {
-                    name: "Git",
-                    icon: <i className="devicon-git-plain"></i>,
-                    category: "other",
-                    ariaLabel: "Git"
-                },
-                {
-                    name: "Nginx",
-                    icon: <i className="devicon-nginx-plain"></i>,
-                    category: "other",
-                    ariaLabel: "Nginx"
-                },
+                techList.javascript,
+                techList.react,
+                techList.next,
+                techList.node,
+                techList.express,
+                techList.tailwind,
+                techList.postgres,
+                techList.aws,
+                techList.git,
+                techList.nginx,
             ],
             links: [
                 {
@@ -193,24 +307,9 @@ export const projects = {
                     </ul>
                 </>,
             technologies: [
-                {
-                    name: "Java",
-                    icon: <i className="devicon-java-plain"></i>,
-                    category: "language",
-                    ariaLabel: "Java"
-                },
-                {
-                    name: "IntelliJ",
-                    icon: <i className="devicon-intellij-plain"></i>,
-                    category: "tool",
-                    ariaLabel: "IntelliJ"
-                },
-                {
-                    name: "Git",
-                    icon: <i className="devicon-git-plain"></i>,
-                    category: "other",
-                    ariaLabel: "Git"
-                },
+                techList.java,
+                techList.intellij,
+                techList.git,
             ],
             links: [
                 {
@@ -272,24 +371,9 @@ export const projects = {
                     <p className='text-justify mb-4'>Saved canvases are stored in your Pictures folder under a directory called "DrawingBoard" with the .canvas extension.</p>
                 </>,
             technologies: [
-                {
-                    name: "Java",
-                    icon: <i className="devicon-java-plain"></i>,
-                    category: "language",
-                    ariaLabel: "Java"
-                },
-                {
-                    name: "IntelliJ",
-                    icon: <i className="devicon-intellij-plain"></i>,
-                    category: "tool",
-                    ariaLabel: "IntelliJ"
-                },
-                {
-                    name: "Git",
-                    icon: <i className="devicon-git-plain"></i>,
-                    category: "other",
-                    ariaLabel: "Git"
-                },
+                techList.java,
+                techList.intellij,
+                techList.git,
             ],
             links: [
                 {
@@ -321,30 +405,10 @@ export const projects = {
                     </ul>
                 </>,
             technologies: [
-                {
-                    name: "C#",
-                    icon: <i className="devicon-csharp-plain"></i>,
-                    category: "language",
-                    ariaLabel: "C Sharp"
-                },
-                {
-                    name: "Unity",
-                    icon: <i className="devicon-unity-plain"></i>,
-                    category: "framework",
-                    ariaLabel: "Unity"
-                },
-                {
-                    name: "VS Code",
-                    icon: <i className="devicon-vscode-plain"></i>,
-                    category: "tool",
-                    ariaLabel: "VS Code"
-                },
-                {
-                    name: "Git",
-                    icon: <i className="devicon-git-plain"></i>,
-                    category: "other",
-                    ariaLabel: "Git"
-                },
+                techList.csharp,
+                techList.unity,
+                techList.vscode,
+                techList.git,
             ],
             links: [
                 {
@@ -366,170 +430,36 @@ export const projects = {
 
 export const skills = {
 
-    list: [
-        {
-            name: "C#",
-            icon: <i className="devicon-csharp-plain text-4xl"></i>,
-            category: "language",
-            ariaLabel: "C Sharp"
-        },
-        {
-            name: "Java",
-            icon: <i className="devicon-java-plain text-4xl"></i>,
-            category: "language",
-            ariaLabel: "Java"
-        },
-        {
-            name: "HTML",
-            icon: <i className="devicon-html5-plain text-4xl"></i>,
-            category: "language",
-            ariaLabel: "HTML"
-        },
-        {
-            name: "CSS",
-            icon: <i className="devicon-css3-plain text-4xl"></i>,
-            category: "language",
-            ariaLabel: "CSS"
-        },
-        {
-            name: "JavaScript",
-            icon: <i className="devicon-javascript-plain text-4xl"></i>,
-            category: "language",
-            ariaLabel: "Java Script"
-        },
-        {
-            name: "PHP",
-            icon: <i className="devicon-php-plain text-4xl"></i>,
-            category: "language",
-            ariaLabel: "PHP"
-        },
-        {
-            name: ".NET",
-            icon: <i className="devicon-dot-net-plain text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "Dot Net"
-        },
-        {
-            name: "Spring Boot",
-            icon: <i className="devicon-spring-plain text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "Spring Boot"
-        },
-        {
-            name: "Typescript",
-            icon: <i className="devicon-typescript-plain text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "Typescript"
-        },
-        {
-            name: "React.js",
-            icon: <i className="devicon-react-plain text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "React"
-        },
-        {
-            name: "Next.js",
-            icon: <i className="devicon-nextjs-plain text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "Next"
-        },
-        {
-            name: "Node.js",
-            icon: <i className="devicon-nodejs-plain text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "Node"
-        },
-        {
-            name: "Express.js",
-            icon: <i className="devicon-express-original text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "Express"
-        },
-        {
-            name: "TailwindCSS",
-            icon: <i className="devicon-tailwindcss-original text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "Tailwind"
-        },
-        {
-            name: "Unity",
-            icon: <i className="devicon-unity-plain text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "Unity"
-        },
-        {
-            name: "Godot",
-            icon: <i className="devicon-godot-plain text-4xl"></i>,
-            category: "framework",
-            ariaLabel: "Godot"
-        },
-        {
-            name: "JUnit",
-            icon: <i className="devicon-junit-plain text-4xl"></i>,
-            category: "testing",
-            ariaLabel: "J Unit"
-        },
-        {
-            name: "MySQL",
-            icon: <i className="devicon-mysql-original text-4xl"></i>,
-            category: "database",
-            ariaLabel: "My SQL"
-        },
-        {
-            name: "MariaDB",
-            icon: <i className="devicon-mariadb-original text-4xl"></i>,
-            category: "database",
-            ariaLabel: "Maria DB"
-        },
-        {
-            name: "PostgreSQL",
-            icon: <i className="devicon-postgresql-plain text-4xl"></i>,
-            category: "database",
-            ariaLabel: "Postgre SQL"
-        },
-        {
-            name: "MongoDB",
-            icon: <i className="devicon-mongodb-plain text-4xl"></i>,
-            category: "database",
-            ariaLabel: "Mongo DB"
-        },
-        {
-            name: "VS Code",
-            icon: <i className="devicon-vscode-plain text-4xl"></i>,
-            category: "tool",
-            ariaLabel: "VS Code"
-        },
-        {
-            name: "IntelliJ",
-            icon: <i className="devicon-intellij-plain text-4xl"></i>,
-            category: "tool",
-            ariaLabel: "IntelliJ"
-        },
-        {
-            name: "AWS",
-            icon: <i className="devicon-amazonwebservices-plain text-4xl"></i>,
-            category: "other",
-            ariaLabel: "AWS"
-        },
-        {
-            name: "Git",
-            icon: <i className="devicon-git-plain text-4xl"></i>,
-            category: "other",
-            ariaLabel: "Git"
-        },
-        {
-            name: "Linux",
-            icon: <i className="devicon-linux-plain text-4xl"></i>,
-            category: "other",
-            ariaLabel: "Linux"
-        },
-        {
-            name: "Nginx",
-            icon: <i className="devicon-nginx-plain text-4xl"></i>,
-            category: "other",
-            ariaLabel: "Nginx"
-        },
+    list : [
+        techList.csharp,
+        techList.java,
+        techList.html,
+        techList.css,
+        techList.javascript,
+        techList.php,
+        techList.dotnet,
+        techList.spring,
+        techList.typescript,
+        techList.react,
+        techList.next,
+        techList.node,
+        techList.express,
+        techList.tailwind,
+        techList.unity,
+        techList.godot,
+        techList.junit,
+        techList.mysql,
+        techList.maria,
+        techList.postgres,
+        techList.mongo,
+        techList.vscode,
+        techList.intellij,
+        techList.aws,
+        techList.git,
+        techList.linux,
+        techList.nginx,
     ],
+
 }
 
 export const journey = {
@@ -540,108 +470,23 @@ export const journey = {
             date: "09/2024 - 12/2024",
             description: <p className='text-xl mb-2 text-justify mb-1'>Completed an intensive 14-week bootcamp focused on modern web development. Gained hands-on experience with Java, Spring, JUnit, JavaScript, AWS and Git, among other technologies. Applied these skills in a team setting using Scrum and best practices like code reviews. As a final project, co-developed SAM, a platform for reporting local occurrences, contributing to both the backend with Node.js, Express.js and PostgreSQL and the frontend with Next.js.</p>,
             technologies: [
-                {
-                    name: "Java",
-                    icon: <i className="devicon-java-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "Java"
-                },
-                {
-                    name: "HTML",
-                    icon: <i className="devicon-html5-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "HTML"
-                },
-                {
-                    name: "CSS",
-                    icon: <i className="devicon-css3-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "CSS"
-                },
-                {
-                    name: "JavaScript",
-                    icon: <i className="devicon-javascript-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "Java Script"
-                },
-                {
-                    name: "Spring Boot",
-                    icon: <i className="devicon-spring-plain text-xl"></i>,
-                    category: "framework",
-                    ariaLabel: "Spring Boot"
-                },
-                {
-                    name: "React.js",
-                    icon: <i className="devicon-react-plain text-xl"></i>,
-                    category: "framework",
-                    ariaLabel: "React"
-                },
-                {
-                    name: "Next.js",
-                    icon: <i className="devicon-nextjs-plain text-xl"></i>,
-                    category: "framework",
-                    ariaLabel: "Next"
-                },
-                {
-                    name: "Node.js",
-                    icon: <i className="devicon-nodejs-plain text-xl"></i>,
-                    category: "framework",
-                    ariaLabel: "Node"
-                },
-                {
-                    name: "Express.js",
-                    icon: <i className="devicon-express-original text-xl"></i>,
-                    category: "framework",
-                    ariaLabel: "Express"
-                },
-                {
-                    name: "JUnit",
-                    icon: <i className="devicon-junit-plain text-xl"></i>,
-                    category: "testing",
-                    ariaLabel: "J Unit"
-                },
-                {
-                    name: "MySQL",
-                    icon: <i className="devicon-mysql-original text-xl"></i>,
-                    category: "database",
-                    ariaLabel: "My SQL"
-                },
-                {
-                    name: "PostgreSQL",
-                    icon: <i className="devicon-postgresql-plain text-xl"></i>,
-                    category: "database",
-                    ariaLabel: "Postgre SQL"
-                },
-                {
-                    name: "VS Code",
-                    icon: <i className="devicon-vscode-plain text-xl"></i>,
-                    category: "tool",
-                    ariaLabel: "VS Code"
-                },
-                {
-                    name: "IntelliJ",
-                    icon: <i className="devicon-intellij-plain text-xl"></i>,
-                    category: "tool",
-                    ariaLabel: "IntelliJ"
-                },
-                {
-                    name: "AWS",
-                    icon: <i className="devicon-amazonwebservices-plain text-xl"></i>,
-                    category: "other",
-                    ariaLabel: "AWS"
-                },
-                {
-                    name: "Git",
-                    icon: <i className="devicon-git-plain text-xl"></i>,
-                    category: "other",
-                    ariaLabel: "Git"
-                },
-                {
-                    name: "Nginx",
-                    icon: <i className="devicon-nginx-plain text-xl"></i>,
-                    category: "other",
-                    ariaLabel: "Nginx"
-                },
+                techList.java,
+                techList.html,
+                techList.css,
+                techList.javascript,
+                techList.spring,
+                techList.react,
+                techList.next,
+                techList.node,
+                techList.express,
+                techList.junit,
+                techList.mysql,
+                techList.postgres,
+                techList.vscode,
+                techList.intellij,
+                techList.aws,
+                techList.git,
+                techList.nginx,
             ]
         },
         {
@@ -650,48 +495,13 @@ export const journey = {
             date: "09/2022 - 12/2022",
             description: <p className='text-xl mb-2 text-justify mb-1'>Developed a user-friendly web application for a transport company to streamline its operations. Designed a clean and intuitive UI with React, enabling seamless management of company resources like inventory and deliveries. Built a robust REST API using .NET, integrated with a MongoDB database, to ensure efficient data handling and scalability.</p>,
             technologies: [
-                {
-                    name: "C#",
-                    icon: <i className="devicon-csharp-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "C Sharp"
-                },
-                {
-                    name: "JavaScript",
-                    icon: <i className="devicon-javascript-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "Java Script"
-                },
-                {
-                    name: ".NET",
-                    icon: <i className="devicon-dot-net-plain text-xl"></i>,
-                    category: "framework",
-                    ariaLabel: "Dot Net"
-                },
-                {
-                    name: "React.js",
-                    icon: <i className="devicon-react-plain text-xl"></i>,
-                    category: "framework",
-                    ariaLabel: "React"
-                },
-                {
-                    name: "MongoDB",
-                    icon: <i className="devicon-mongodb-plain text-xl"></i>,
-                    category: "database",
-                    ariaLabel: "Mongo DB"
-                },
-                {
-                    name: "VS Code",
-                    icon: <i className="devicon-vscode-plain text-xl"></i>,
-                    category: "tool",
-                    ariaLabel: "VS Code"
-                },
-                {
-                    name: "Git",
-                    icon: <i className="devicon-git-plain text-xl"></i>,
-                    category: "other",
-                    ariaLabel: "Git"
-                },
+                techList.csharp,
+                techList.javascript,
+                techList.dotnet,
+                techList.react,
+                techList.mongo,
+                techList.vscode,
+                techList.git,
             ]
         },
         {
@@ -700,36 +510,11 @@ export const journey = {
             date: "01/2022 - 05/2022",
             description: <p className='text-xl mb-2 text-justify mb-1'>Created a new infirmary window interface for the M1, a flagship software used by hospitals, clinics and health centers to manage patient records, medical procedures and financial operations. Developed the interface using Windows Forms and implemented a REST API with .NET to ensure smooth functionality and integration with the existing system.</p>,
             technologies: [
-                {
-                    name: "C#",
-                    icon: <i className="devicon-csharp-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "C Sharp"
-                },
-                {
-                    name: ".NET",
-                    icon: <i className="devicon-dot-net-plain text-xl"></i>,
-                    category: "framework",
-                    ariaLabel: "Dot Net"
-                },
-                {
-                    name: "MySQL",
-                    icon: <i className="devicon-mysql-original text-xl"></i>,
-                    category: "database",
-                    ariaLabel: "My SQL"
-                },
-                {
-                    name: "VS Code",
-                    icon: <i className="devicon-vscode-plain text-xl"></i>,
-                    category: "tool",
-                    ariaLabel: "VS Code"
-                },
-                {
-                    name: "Git",
-                    icon: <i className="devicon-git-plain text-xl"></i>,
-                    category: "other",
-                    ariaLabel: "Git"
-                },
+                techList.csharp,
+                techList.dotnet,
+                techList.mysql,
+                techList.vscode,
+                techList.git,
             ]
         },
         {
@@ -738,42 +523,12 @@ export const journey = {
             date: "09/2020 - 06/2021",
             description: <p className='text-xl mb-2 text-justify mb-1'>Developed an archive website to centralize and showcase publications and institutional news. Designed the front-end using HTML, CSS and JavaScript to ensure a responsive and visually appealing user experience. Built the back-end logic with PHP and used a MySQL database to efficiently store, retrieve and manage content, ensuring seamless data handling for the institution.</p>,
             technologies: [
-                {
-                    name: "HTML",
-                    icon: <i className="devicon-html5-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "HTML"
-                },
-                {
-                    name: "CSS",
-                    icon: <i className="devicon-css3-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "CSS"
-                },
-                {
-                    name: "JavaScript",
-                    icon: <i className="devicon-javascript-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "Java Script"
-                },
-                {
-                    name: "PHP",
-                    icon: <i className="devicon-php-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "PHP"
-                },
-                {
-                    name: "VS Code",
-                    icon: <i className="devicon-vscode-plain text-xl"></i>,
-                    category: "tool",
-                    ariaLabel: "VS Code"
-                },
-                {
-                    name: "Git",
-                    icon: <i className="devicon-git-plain text-xl"></i>,
-                    category: "other",
-                    ariaLabel: "Git"
-                },
+                techList.html,
+                techList.css,
+                techList.javascript,
+                techList.php,
+                techList.vscode,
+                techList.git,
             ]
         },
         {
@@ -782,60 +537,15 @@ export const journey = {
             date: "09/2018 - 06/2021",
             description: <p className='text-xl mb-2 text-justify mb-1'>Acquired core skills in software development, multimedia production, network and database management and system configuration. I came out prepared to take on roles in software development, IT support or digital design.</p>,
             technologies: [
-                {
-                    name: "C#",
-                    icon: <i className="devicon-csharp-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "C Sharp"
-                },
-                {
-                    name: "HTML",
-                    icon: <i className="devicon-html5-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "HTML"
-                },
-                {
-                    name: "CSS",
-                    icon: <i className="devicon-css3-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "CSS"
-                },
-                {
-                    name: "JavaScript",
-                    icon: <i className="devicon-javascript-plain text-xl"></i>,
-                    category: "language",
-                    ariaLabel: "Java Script"
-                },
-                {
-                    name: ".NET",
-                    icon: <i className="devicon-dot-net-plain text-xl"></i>,
-                    category: "framework",
-                    ariaLabel: "Dot Net"
-                },
-                {
-                    name: "MySQL",
-                    icon: <i className="devicon-mysql-original text-xl"></i>,
-                    category: "database",
-                    ariaLabel: "My SQL"
-                },
-                {
-                    name: "MariaDB",
-                    icon: <i className="devicon-mariadb-original text-xl"></i>,
-                    category: "database",
-                    ariaLabel: "Maria DB"
-                },
-                {
-                    name: "VS Code",
-                    icon: <i className="devicon-vscode-plain text-xl"></i>,
-                    category: "tool",
-                    ariaLabel: "VS Code"
-                },
-                {
-                    name: "Git",
-                    icon: <i className="devicon-git-plain text-xl"></i>,
-                    category: "other",
-                    ariaLabel: "Git"
-                },
+                techList.csharp,
+                techList.html,
+                techList.css,
+                techList.javascript,
+                techList.dotnet,
+                techList.mysql,
+                techList.maria,
+                techList.vscode,
+                techList.git,
             ]
         }
     ]
