@@ -414,7 +414,7 @@ export const projects = {
                         <li className="text-justify mb-1">React.js</li>
                         <li className="text-justify mb-1">TypeScript</li>
                         <li className="text-justify mb-1">Tailwind CSS</li>
-                        <li className="text-justify mb-1">Github REST and GraphQL API</li>
+                        <li className="text-justify mb-1">Github REST and GraphQL APIs</li>
                         <li className="text-justify mb-1">Git</li>
                     </ul>
 
