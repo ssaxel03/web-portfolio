@@ -378,9 +378,74 @@ export const socials = {
 export const projects = {
     list: [
         {
+            name: 'Web Portfolio',
+            id: 'web-portfolio',
+            date: 'Feb 2025 - now',
+            shortDescription: 'My web portfolio that showcases my journey and some of my proudest projects.',
+            longDescription:
+                <>
+
+                    <h3 className="mb-4">Web Portfolio</h3>
+
+                    <p className="text-justify mb-2">A clean, responsive portfolio website showcasing my professional journey, skills, and projects. Built with modern web technologies to provide a seamless user experience.</p>
+
+                    <h3 className="mb-4">Overview</h3>
+
+                    <p className="text-justify mb-2">This portfolio serves as a digital representation of my professional identity, highlighting my experience, technical capabilities, and development projects. The site features simple navigation and dynamically generated content from a centralized data file for easy maintenance and updates.</p>
+
+                    <h3 className="mb-4">Features</h3>
+
+                    <ul className='list-disc ml-5 mb-4'>
+                        <li className="text-justify mb-1">Responsive Design: Fully optimized for all device sizes</li>
+                        <li className="text-justify mb-1">Simple Navigation: Intuitive user interface for seamless exploration</li>
+                        <li className="text-justify mb-1">Dynamic Content: Content rendered from a single data source for easy updates</li>
+                        <li className="text-justify mb-1">Professional Showcase: Clean presentation of skills, experience, and projects</li>
+                        <li className="text-justify mb-1">Tailwind CSS: Utility-first CSS framework for rapid UI development</li>
+                        <li className="text-justify mb-1">Git: Version control for project management</li>
+                    </ul>
+
+                    <h3 className="mb-4">Tech Stack</h3>
+
+                    <p className="text-justify mb-2">The portfolio is built using the following technologies:</p>
+
+                    <ul className='list-disc ml-5 mb-4'>
+                        <li className="text-justify mb-1">JavaScript: Core programming language</li>
+                        <li className="text-justify mb-1">TypeScript: Static typing for improved code quality and developer experience</li>
+                        <li className="text-justify mb-1">React: Frontend library for building the user interface</li>
+                        <li className="text-justify mb-1">Next.js: React framework providing server-side rendering, routing, and optimization</li>
+                        <li className="text-justify mb-1">Tailwind CSS: Utility-first CSS framework for rapid UI development</li>
+                        <li className="text-justify mb-1">Git: Version control for project management</li>
+                    </ul>
+
+                </>,
+            technologies: [
+                techList.javascriptxl,
+                techList.typescriptxl,
+                techList.reactxl,
+                techList.nextxl,
+                techList.tailwindxl,
+                techList.vscodexl,
+                techList.gitxl,
+            ],
+            links: [
+                {
+                    name: "GitHub",
+                    url: "https://github.com/ssaxel03/web-portfolio",
+                    target: "_blank",
+                    icon: <i className="devicon-github-original"></i>,
+                },
+                {
+                    name: "WebApp",
+                    url: "https://ssaxel03.com",
+                    target: "_blank",
+                    icon: <LuLink />,
+                },
+            ]
+        },
+        {
             name: 'SAM - Your Pocket Samaritan',
             id: 'sam',
-            date: 'Dec 2024 - now',
+            date: 'Dec 2024 - Jan 2025',
             shortDescription: 'Made in just three days, SAM is a platform for reporting local occurrences featuring interactive maps and a menu for browsing nearby reports.',
             longDescription:
                 <>
@@ -595,7 +660,7 @@ export const projects = {
 
 export const skills = {
 
-    list : [
+    list: [
         techList.csharp,
         techList.java,
         techList.html,
