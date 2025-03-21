@@ -378,16 +378,78 @@ export const socials = {
 export const projects = {
     list: [
         {
-            name: 'Web Portfolio',
-            id: 'web-portfolio',
-            date: 'Feb 2025 - now',
-            shortDescription: 'My web portfolio that showcases my journey and some of my proudest projects.',
+            name: 'GitHub Stats',
+            id: 'github-stats',
+            date: 'Mar 2025 - now',
+            shortDescription: 'Web application that provides comprehensive statistics and insights for GitHub users.',
             longDescription:
                 <>
 
-                    <h3 className="mb-4">Web Portfolio</h3>
+                    <h3 className="mb-4">Overview</h3>
 
-                    <p className="text-justify mb-2">A clean, responsive portfolio website showcasing my professional journey, skills, and projects. Built with modern web technologies to provide a seamless user experience.</p>
+                    <p className="text-justify mb-2">GitHub Stats gives you a quick and insightful view of any GitHub user's activity. Simply visit `github-stats.ssaxel03.com/` to see detailed statistics about any GitHub user, including yourself.</p>
+
+                    <h3 className="mb-4">Features</h3>
+
+                    <ul className='list-disc ml-5 mb-4'>
+                        <li className="text-justify mb-1">Recent Activity: View a user's 15 most recent commits</li>
+                        <li className="text-justify mb-1">Star Count: See how many stars a user has received across all repositories</li>
+                        <li className="text-justify mb-1">Total contributions and commits since joining GitHub</li>
+                        <li className="text-justify mb-1">Contributions and commits in the current year</li>
+                        <li className="text-justify mb-1">Language Analysis: Visualizes all programming languages used, ranked from most to least used</li>
+                        <li className="text-justify mb-1">Single Dashboard: Access all important GitHub statistics in one convenient place</li>
+                        <li className="text-justify mb-1">Private Repository Support: When deploying your own instance with your personal GitHub token, you can view statistics for both public and private repositories</li>
+                    </ul>
+
+                    <h3 className="mb-4">Roadmap</h3>
+
+                    <ul className='list-disc ml-5 mb-4'>
+                        <li className="text-justify mb-1">Card Image Generation**: Create embeddable cards that can be added to GitHub profiles and READMEs to showcase real-time GitHub statistics</li>
+                    </ul>
+
+                    <h3 className="mb-4">Tech stack</h3>
+
+                    <ul className='list-disc ml-5 mb-4'>
+                        <li className="text-justify mb-1">Next.js</li>
+                        <li className="text-justify mb-1">React.js</li>
+                        <li className="text-justify mb-1">TypeScript</li>
+                        <li className="text-justify mb-1">Tailwind CSS</li>
+                        <li className="text-justify mb-1">Github REST and GraphQL API</li>
+                        <li className="text-justify mb-1">Git</li>
+                    </ul>
+
+                </>,
+            technologies: [
+                techList.javascriptxl,
+                techList.typescriptxl,
+                techList.reactxl,
+                techList.nextxl,
+                techList.tailwindxl,
+                techList.vscodexl,
+                techList.gitxl,
+            ],
+            links: [
+                {
+                    name: "GitHub",
+                    url: "https://github.com/ssaxel03/github-stats",
+                    target: "_blank",
+                    icon: <i className="devicon-github-original"></i>,
+                },
+                {
+                    name: "WebApp",
+                    url: "https://github-stats.ssaxel03.com",
+                    target: "_blank",
+                    icon: <LuLink />,
+                },
+            ]
+        },
+        {
+            name: 'Web Portfolio',
+            id: 'web-portfolio',
+            date: 'Feb 2025 - now',
+            shortDescription: 'A clean, responsive portfolio website showcasing my professional journey, skills, and projects. Built with modern web technologies to provide a seamless user experience.',
+            longDescription:
+                <>
 
                     <h3 className="mb-4">Overview</h3>
 
