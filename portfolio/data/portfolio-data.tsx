@@ -347,7 +347,7 @@ export const about = {
 
 export const cv = {
     name: "CV",
-    url: "/CV_axelsoares_2025_01_13.pdf",
+    url: "/CV-AxelSoares-2025-04-02.pdf",
     target: "_blank",
     icon: "Download my CV",
 }
