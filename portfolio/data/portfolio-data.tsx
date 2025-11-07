@@ -21,7 +21,7 @@ const techList = {
     },
     scalaxl: {
         name: "Scala",
-        icon: <i className="devicon-java-plain text-xl"></i>,
+        icon: <i className="devicon-scala-plain text-xl"></i>,
         category: "language",
         ariaLabel: "Scala"
     },
@@ -194,6 +194,18 @@ const techList = {
         icon: <i className="devicon-java-plain text-4xl"></i>,
         category: "language",
         ariaLabel: "Java"
+    },
+    scala: {
+        name: "Scala",
+        icon: <i className="devicon-scala-plain text-4xl"></i>,
+        category: "language",
+        ariaLabel: "Scala"
+    },
+    ruby: {
+        name: "Ruby",
+        icon: <i className="devicon-ruby-plain text-4xl"></i>,
+        category: "language",
+        ariaLabel: "Ruby"
     },
     html: {
         name: "HTML",
@@ -737,8 +749,8 @@ export const skills = {
     list: [
         techList.csharp,
         techList.java,
-        techList.scalaxl,
-        techList.rubyxl,
+        techList.scala,
+        techList.ruby,
         techList.html,
         techList.css,
         techList.javascript,
