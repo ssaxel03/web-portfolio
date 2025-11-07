@@ -19,6 +19,18 @@ const techList = {
         category: "language",
         ariaLabel: "Java"
     },
+    scalaxl: {
+        name: "Scala",
+        icon: <i className="devicon-java-plain text-xl"></i>,
+        category: "language",
+        ariaLabel: "Scala"
+    },
+    rubyxl: {
+        name: "Ruby",
+        icon: <i className="devicon-ruby-plain text-xl"></i>,
+        category: "language",
+        ariaLabel: "Ruby"
+    },
     htmlxl: {
         name: "HTML",
         icon: <i className="devicon-html5-plain text-xl"></i>,
@@ -341,8 +353,8 @@ export const details = {
 }
 
 export const about = {
-    message: "I'm a developer based in Porto focused on delivering both web and desktop solutions that tackle real problems.",
-    metadata: "Software developer skilled in .NET, React and Node.",
+    message: "Software developer working on distributed systems and real-time data streaming services.",
+    metadata: "Software developer working on distributed systems and real-time data streaming services.",
 }
 
 export const cv = {
@@ -725,6 +737,8 @@ export const skills = {
     list: [
         techList.csharp,
         techList.java,
+        techList.scalaxl,
+        techList.rubyxl,
         techList.html,
         techList.css,
         techList.javascript,
@@ -756,6 +770,23 @@ export const skills = {
 
 export const journey = {
     list: [
+        {
+            role: "Backend Intern",
+            company: "Blip - Flutter Entertainment",
+            date: "06/2025 - current",
+            description: <p className='text-xl mb-2 text-justify mb-1'>Developed distributed and performant new features and systems that handle real time data processing in various microservices.</p>,
+            technologies: [
+                techList.javaxl,
+                techList.scalaxl,
+                techList.rubyxl,
+                techList.springxl,
+                techList.junitxl,
+                techList.vscodexl,
+                techList.intellijxl,
+                techList.awsxl,
+                techList.gitxl,
+            ]
+        },
         {
             role: "Fullstack Programming Bootcamp",
             company: "Code for All_",
